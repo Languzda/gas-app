@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  background-color: blue;
+  text-align: center;
+  padding: 3rem;
+}
+
+.btn {
+  background-color: yellow;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
