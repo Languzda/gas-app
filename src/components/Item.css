@@ -9,6 +9,10 @@
   border-bottom: 1px solid blue;
 }
 
+.selected {
+  background-color: tomato;
+}
+
 .date {
   font-size: 2rem;
 }

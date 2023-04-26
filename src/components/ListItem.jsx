@@ -1,16 +1,22 @@
-import React from "react";
-
 import Item from "./Item";
 import "./ListItem.css";
 
-const ListItem = ({ items }) => {
-  const now = new Date();
-  const value = 10520.69;
+const ListItem = ({ items, selected, setSelected }) => {
+  const onSelectHandler = (id) => {
+    setSelected(id);
+    console.log(id);
+  };
 
   return (
     <ul className="list">
       {items.map((item) => (
-        <Item key={item.id} value={item.value} date={item.date} />
+        <Item
+          key={item.id}
+          value={item.value}
+          date={item.date}
+          selected={selected === item.id}
+          onClick={onSelectHandler.bind(null, item.id)}
+        />
       ))}
     </ul>
   );
